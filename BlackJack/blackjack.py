@@ -60,7 +60,7 @@ def iteration(iterations, update, Name, policy, n_zero=100):
         while not game.terminal:
 
             # Optional
-            if len(game.deck.contents) < 52 * 0.6:
+            if len(game.deck.cards) < 52 * 0.6:
                 game.deck = Deck()
                 game.deck.shuffle()
             # If player1 selected hit and did not bust, we update the epsilon
